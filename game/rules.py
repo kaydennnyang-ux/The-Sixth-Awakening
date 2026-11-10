@@ -237,7 +237,7 @@ def step_execute(level: Level, tilemap: TileMap, state: GameState, action: Actio
         # 默认反馈：把玩家和回声这一步各自做了什么说清楚
         notes.append(
             "You {0}; the echo {1}.".format(
-                "wait" if action is Action.WAIT else "move " + action.value,
+                "wait" if action is Action.WAIT else "move " + echo_action.value,
                 "waits" if echo_action is Action.WAIT else "replays " + action.value,
             )
         )
